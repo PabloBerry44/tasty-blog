@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Slab:wght@300&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* NAV SECTION  */
+
+nav{
+    position: relative;
+    width: 100%;
+    background: rgb(164, 211, 255);
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em;
+}
+.menu-button{
+    line-height: 1;
+}
+.website-name{
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+.dropdown-drop{
+    display: block;
+}
+.dropdown ul{
+    list-style: none;
+    padding: .5em 1em;
+}
+.dropdown li{
+    margin-bottom: 1em;
+}
+nav li{
+    padding: 0 1em;
+    border-radius: 5px;
+    transition: 300ms;
+    font-size: 1.3rem;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    background: rgb(142, 200, 255);
+}
+
+@media only screen and (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
+    .navbar ul{
+        display: inherit;
+    }
+    .dropdown{
+        display: none;
+    }
+}
+
+/* MAIN SECTION */
+
+.sliding-image{
+    width: 100%;
+    display: none;
+    transition: 1000ms;
+}
+.slider{
+    background: black;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+
+}
