@@ -4,13 +4,21 @@
     box-sizing: border-box;
     padding: 0; margin: 0;
 }
+body{
+    background-image: url(./library/wheat.png);
+}
+html{
+    scroll-behavior: smooth;
+}
 
 /* NAV SECTION  */
 
 nav{
     position: relative;
     width: 100%;
-    background: rgb(164, 211, 255);
+}
+nav *{
+    color: white;
 }
 .navbar{
     display: flex;
@@ -53,10 +61,9 @@ nav li{
 }
 li a{
     text-decoration: none;
-    color: black;
 }
 nav li:hover{
-    background: rgb(142, 200, 255);
+    background: rgb(97, 0, 30);
 }
 
 @media only screen and (min-width: 500px){
@@ -73,17 +80,148 @@ nav li:hover{
 
 /* MAIN SECTION */
 
-.sliding-image{
-    width: 100%;
-    display: none;
-    transition: 1000ms;
+main{
+    font-size: 30px;
+    padding: 5vw;
 }
-.slider{
-    background: black;
+.slideshow{
     max-width: 1000px;
-    margin: auto;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    overflow: hidden;
+    margin-inline: auto;
+    position: relative;
+}
+.slideshow img{
+    width: 100%;
+}
+.slider-button{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.slider-button img{
+    width: 2em;
+    filter: invert();
+}
+.prev{
+    background: transparent;
+    left: 0;
+    justify-content: flex-start;
+}
+.next{
+    justify-content: flex-end;
+    right: 0;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 2em;
+    font-size: 1.3rem;
+    background: rgb(0, 0, 0);
+    color: rgb(230, 230, 230);
+}
+
+@keyframes underlines {
+    50% {
+        width: 100%;
+    }
+    100% {
+        left: inherit;
+        right: 0;
+        width: 0;
+    }
+}
+.contact-row a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    position: relative;
+}
+.contact-row a::after{
+    content: '';
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+}
+.contact-row a::before{
+    content: '';
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    transition-duration: 350ms;
+    transition-delay: 350ms;
+}
+.contact-row a:hover::before{
+    width: 100%;
+}
+.contact-row a:hover::after{
+    animation: underlines 350ms linear 0s 1 normal;
+}
+.big-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+.contact-row{
+    width: 13em;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 1em;
+}
+.contact-row img{
+    width: 30px;
+    filter: invert();
 }

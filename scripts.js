@@ -7,21 +7,47 @@ menuButton.addEventListener('click', ()=>{
 })
 
 // IMAGE SLIDER
-const images = document.querySelectorAll('.sliding-image')
-var i = 0;
-function slider(){ 
-    if (i<images.length){ 
-            for(let i=0; i<images.length; i++){
-                images[i].style.opacity="0"
-                setTimeout(function() {images[i].style.display = "none"}, 1000)
-            }
-        setTimeout(function() {images[i].style.display = "block"}, 1000)
-        setTimeout(function() {images[i].style.opacity="1"}, 1100)
-        i++
+var image = document.querySelectorAll('.image')
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+const myInterval = setInterval(nextImg, 1000); //change image every 5 seconds
+
+prev.addEventListener('click', prevImg) //change image on click
+next.addEventListener('click', nextImg) //change image on click
+
+prev.addEventListener('click', ()=>{clearInterval(myInterval)}) //stop slideshow on click
+next.addEventListener('click', ()=>{clearInterval(myInterval)}) //stop slideshow on click
+
+
+image.forEach(image => {
+    image.style.display="none"
+});
+let i = 0
+image[i].style.display = "block"
+
+function prevImg(){
+    if(i==0){
+        image[i].style.display = "none"
+        i=image.length-1
+        image[i].style.display = "block"
     }
-    if(i==images.length){
-        i=0
+    else{
+        image[i].style.display = "none"
+        i--
+        image[i].style.display = "block"
     }
 }
-slider()
-setInterval(slider, 5000)
+
+
+function nextImg(){
+    if(i==image.length-1){
+        image[i].style.display = "none"
+        i=0
+        image[i].style.display = "block"
+    }
+    else{
+        image[i].style.display = "none"
+        i++
+        image[i].style.display = "block"
+    }
+}
