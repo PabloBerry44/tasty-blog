@@ -90,8 +90,9 @@ main{
     margin-inline: auto;
     position: relative;
 }
-.slideshow img{
+.slideshow .image{
     width: 100%;
+    display: none;
 }
 .slider-button{
     position: absolute;

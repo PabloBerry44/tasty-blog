@@ -18,10 +18,6 @@ next.addEventListener('click', nextImg) //change image on click
 prev.addEventListener('click', ()=>{clearInterval(myInterval)}) //stop slideshow on click
 next.addEventListener('click', ()=>{clearInterval(myInterval)}) //stop slideshow on click
 
-
-image.forEach(image => {
-    image.style.display="none"
-});
 let i = 0
 image[i].style.display = "block"
 
@@ -37,8 +33,6 @@ function prevImg(){
         image[i].style.display = "block"
     }
 }
-
-
 function nextImg(){
     if(i==image.length-1){
         image[i].style.display = "none"
