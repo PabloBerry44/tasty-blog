@@ -10,7 +10,7 @@ menuButton.addEventListener('click', ()=>{
 var image = document.querySelectorAll('.image')
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
-const myInterval = setInterval(nextImg, 1000); //change image every 5 seconds
+const myInterval = setInterval(nextImg, 4000); //change image every 5 seconds
 
 prev.addEventListener('click', prevImg) //change image on click
 next.addEventListener('click', nextImg) //change image on click
