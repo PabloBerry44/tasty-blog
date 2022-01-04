@@ -5,21 +5,38 @@
     padding: 0; margin: 0;
 }
 body{
-    background-image: url(./library/wheat.png);
+    background-image: url(./library/sakura.png);
 }
 html{
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
 }
+::-webkit-scrollbar{
+    background: rgb(187, 187, 187);
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(88, 88, 88); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(145, 145, 145); 
+}
 
 /* NAV SECTION  */
 
 nav{
-    position: relative;
+    transition: 300ms;
+    background: white;
+    position: fixed;
     width: 100%;
+    z-index: 1;
 }
 nav *{
-    color: white;
+    color: black;
 }
 .navbar{
     display: flex;
@@ -29,6 +46,7 @@ nav *{
 }
 .menu-button{
     line-height: 1;
+    cursor: pointer;
 }
 .website-name{
     font-family: 'Indie Flower', cursive;
@@ -53,6 +71,7 @@ nav *{
 }
 .dropdown li{
     margin-bottom: 1em;
+    width: max-content;
 }
 nav li{
     padding: 0 1em;
@@ -64,10 +83,10 @@ li a{
     text-decoration: none;
 }
 nav li:hover{
-    background: rgb(97, 0, 30);
+    background: rgb(221, 0, 70);
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 700px){
     .menu-button{
         display: none;
     }
@@ -82,13 +101,28 @@ nav li:hover{
 /* MAIN SECTION */
 
 main{
-    font-size: 30px;
+    font-size: 1.3rem;
     padding: 5vw;
-}
-.slideshow{
+    padding-top: 5em;
+    color: black;
     max-width: 1000px;
     margin-inline: auto;
+    transition: 300ms;
+}
+main p{
+    text-align: justify;
+}
+main ul{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.slideshow{
     position: relative;
+    margin-bottom: 100px;
+    box-shadow:
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.036),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.054),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
 }
 .slideshow .image{
     width: 100%;
@@ -116,58 +150,27 @@ main{
     justify-content: flex-end;
     right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#offer{
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+.cake{
+    margin-top: 100px;
+    width: 100%;
+}
 
 
 footer{
-    padding: 2em;
     font-size: 1.3rem;
     background: rgb(0, 0, 0);
     color: rgb(230, 230, 230);
+}
+.inner-footer{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 5vw;
+    padding-bottom: 100px;
 }
 
 @keyframes underlines {

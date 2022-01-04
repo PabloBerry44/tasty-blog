@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,65 +15,81 @@
             <div class="menu-button">ME<br>NU</div>
             <ul>
                 <li><a href="#">Start</a></li>
-                <li><a href="#">Offer</a></li>
+                <li><a href="#offer">Offer</a></li>
                 <li><a href="#foot">Contact</a></li>
             </ul>
+            <div class="switch">
+                <div class="circle"></div>
+            </div>
         </div>
         <div class="dropdown">
             <ul>
                 <li><a href="#">Start</a></li>
-                <li><a href="#">Offer</a></li>
+                <li><a href="#offer">Offer</a></li>
                 <li><a href="#foot">Contact</a></li>
             </ul>
+            <div class="switch">
+                <div class="circle"></div>
+            </div>
         </div>
     </nav>
 
+    <div class="container">
+        <main>
 
-    <main>
-
-        <div class="slideshow">
-            <img class="image" src="./library/slideshow/image (1).jpg" alt="image">
-            <img class="image" src="./library/slideshow/image (2).jpg" alt="image">
-            <img class="image" src="./library/slideshow/image (3).jpg" alt="image">
-            <img class="image" src="./library/slideshow/image (4).jpg" alt="image">
-            <img class="image" src="./library/slideshow/image (5).jpg" alt="image">
-            <img class="image" src="./library/slideshow/image (6).jpg" alt="image">
-            <div class="slider-button prev"><img src="./library/prev.svg" alt="prev"></div>
-            <div class="slider-button next"><img src="./library/next.svg" alt="next"></div>
-        </div>
-
-    </main>
-
-    <footer id="foot">
-        <h1>Contact</h1>
-        <div class="big-row">
-            <div class="column1">
-                <div class="contact-row">
-                    <img src="./library/call-outline.svg" alt="icon"><a href="tel:592583281">592 583 281</a>
-                </div>
-                <div class="contact-row">
-                    <img src="./library/mail-outline.svg" alt="icon"><a href="mailto:lorem@email.com">lorem@email.com</a>
-                </div>
-                <div class="contact-row">
-                    <img src="./library/location-outline.svg" alt="icon"><a href="https://www.google.com/maps/@52.2474591,21.025438,10z" target="_blank">ul. Różowej 1/1a<br>18-691, Warszawa</a>
+            <div class="slideshow">
+                <img class="image" src="./library/slideshow/image (1).jpg" alt="image">
+                <img class="image" src="./library/slideshow/image (2).jpg" alt="image">
+                <img class="image" src="./library/slideshow/image (3).jpg" alt="image">
+                <img class="image" src="./library/slideshow/image (4).jpg" alt="image">
+                <img class="image" src="./library/slideshow/image (5).jpg" alt="image">
+                <img class="image" src="./library/slideshow/image (6).jpg" alt="image">
+                <div class="slider-button prev"><img src="./library/iconpack/prev.svg" alt="prev"></div>
+                <div class="slider-button next"><img src="./library/iconpack/next.svg" alt="next"></div>
+            </div>
+    
+                <h1>The best cakes in the city</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos harum, fuga cumque ex voluptatem sunt consequatur cupiditate molestias culpa quam ducimus tempore.</p>
+                <h1 id="offer">Our offer</h1>
+                <p>Fugiat quibusdam soluta facilis maxime ipsum quas ullam quod, tenetur voluptatibus quo natus autem quidem. Necessitatibus, consequuntur perferendis consectetur facere illo nulla esse officiis nemo in iure deserunt totam suscipit magnam.</p>
+                <ul>
+                    <li>cakes</li>
+                    <li>cookies</li>
+                    <li>coffee</li>
+                    <li>chocolate pies</li>
+                </ul>
+                <img class="cake" src="./library/image (7).jpg" alt="cake">
+    
+        </main>
+    
+        <footer id="foot">
+            <div class="inner-footer">
+                <h1>Contact</h1>
+                <div class="big-row">
+                    <div class="column1">
+                        <div class="contact-row">
+                            <img src="./library/iconpack/call-outline.svg" alt="icon"><a href="tel:592583281">592 583 281</a>
+                        </div>
+                        <div class="contact-row">
+                            <img src="./library/iconpack/mail-outline.svg" alt="icon"><a href="mailto:lorem@email.com">lorem@email.com</a>
+                        </div>
+                        <div class="contact-row">
+                            <img src="./library/iconpack/location-outline.svg" alt="icon"><a href="https://www.google.com/maps/@52.2474591,21.025438,10z" target="_blank">ul. Różowej 1/1a<br>18-691, Warszawa</a>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="contact-row">
+                            <img src="./library/iconpack/logo-facebook.svg" alt="icon"><a target="_blank" href="https://www.facebook.com/">facebook</a>
+                        </div>
+                        <div class="contact-row">
+                            <img src="./library/iconpack/logo-instagram.svg" alt="icon"><a target="_blank" href="https://www.instagram.com/">instagram</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="column2">
-                <div class="contact-row">
-                    <img src="./library/logo-facebook.svg" alt="icon"><a target="_blank" href="https://www.facebook.com/">facebook</a>
-                </div>
-                <div class="contact-row">
-                    <img src="./library/logo-instagram.svg" alt="icon"><a target="_blank" href="https://www.instagram.com/">instagram</a>
-                </div>
-            </div>
-        </div>
+        </footer>
+    </div>
 
-
-
-            
-
-
-    </footer>
 
 <script src="scripts.js"></script>
 </body>
