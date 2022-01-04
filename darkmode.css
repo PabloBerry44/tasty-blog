@@ -2,8 +2,8 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 70px;
-    height: 40px;
+    width: 50px;
+    height: 25px;
     border-radius: 40px;
     background: rgb(235, 235, 235);
     transition: 200ms ease-in;
@@ -13,19 +13,19 @@
 }
 .circle{
     position: absolute;
-    left: 5px;
-    width: 30px;
-    height: 30px;
+    left: 4px;
+    width: 20px;
+    height: 21px;
     background: rgb(255, 197, 37);
     border-radius: 50%;
     transition: 200ms ease-in-out;
 }
 .circle-active{
-    left: 35px;
+    left: 27px;
     background: rgb(0, 0, 0);
 }
 .switch-active{
-    background: rgb(66, 209, 0);
+    background: rgb(182, 255, 13);
 }
 .navbar .switch{
     display: none;
