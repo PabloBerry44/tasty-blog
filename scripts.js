@@ -50,7 +50,12 @@ function nextImg(){
     }
 }
 
-
+const navButton = document.querySelectorAll('.nav-button')
+navButton.forEach(navButton => {
+    navButton.addEventListener('click', ()=>{
+        dropdown.classList.remove('dropdown-drop')
+    })
+});
 
 
 // darkomode
