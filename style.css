@@ -29,8 +29,7 @@ html{
 /* NAV SECTION  */
 
 nav{
-    transition: 300ms;
-    background: white;
+    background-image: url(./library/sakura.png);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -61,6 +60,7 @@ nav *{
 }
 .dropdown{
     display: none;
+    border-bottom: 2px solid black;
 }
 .dropdown-drop{
     display: block;
@@ -76,7 +76,6 @@ nav *{
 nav li{
     padding: 0 1em;
     border-radius: 5px;
-    transition: 300ms;
     font-size: 1.3rem;
 }
 li a{
@@ -107,7 +106,6 @@ main{
     color: black;
     max-width: 1000px;
     margin-inline: auto;
-    transition: 300ms;
 }
 main p{
     text-align: justify;

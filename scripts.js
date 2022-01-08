@@ -58,7 +58,7 @@ navButton.forEach(navButton => {
 });
 
 
-// darkomode
+// darkmode
 const switcher = document.querySelectorAll('.switch')
 const circle = document.querySelectorAll('.circle')
 const body = document.getElementsByTagName('body')
