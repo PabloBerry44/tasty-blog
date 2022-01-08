@@ -26,7 +26,7 @@
     transform: translateX(100%);
 }
 .switch-active{
-    background-color: #51D88A;
+    background-color: rgb(48, 209, 88);
 }
 .navbar .switch{
     display: none;
